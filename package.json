@@ -1,11 +1,21 @@
 {
   "name": "utils-js-htt",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "js常用工具函数",
+  "main": "dist/utils-js-htt.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "prepublish": "webpack"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "htt",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.1.1"
+  }
 }

@@ -1,3 +1,4 @@
+import { isNumber } from 'lodash';
 /**
  * 格式化金额，保留2位小数
  */
