@@ -1,23 +1,26 @@
 const TerserPlugin = require('terser-webpack-plugin') // 引入压缩插件
+const path = require('path');
 
 module.exports = {
-    mode: 'none', // 因为默认是production 默认会进行压缩
-    entry: {
-        "utils-js-htt": "./index.js",
-        "utils-js-htt.min": "./index.js"
-    },
+    mode: 'production', // 因为默认是production 默认会进行压缩
+    entry: './src/index.js',
     output: {
-        filename: "[name].js",
-        library: "tools",
-        libraryExport: "default", // 不添加的话引用的时候需要 tools.default
-        libraryTarget: "umd", // var this window ...
+        filename: 'main.js',
+        path: path.resolve(__dirname, './dist'),
+        libraryTarget: 'commonjs2'
+      },
+    resolve: {
+        alias: {
+          '@': path.resolve(__dirname, 'src')
+        }
     },
-    optimization: {
-        minimize: true,
-        minimizer: [
-            new TerserPlugin({ // 使用压缩插件
-                include: /\.min\.js$/
-            })
+    module: {
+        rules: [
+          {
+            test: /\.js$/,
+            use: 'babel-loader',
+            exclude: /node_modules/,
+          },
         ]
-    }
+    },
 }
