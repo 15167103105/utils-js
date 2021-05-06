@@ -1,4 +1,3 @@
-const TerserPlugin = require('terser-webpack-plugin') // 引入压缩插件
 const path = require('path');
 
 module.exports = {
