@@ -1,6 +1,6 @@
 {
   "name": "utils-js-htt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "js常用工具函数",
   "main": "./dist/main.js",
   "module": "./dist/main.js",
