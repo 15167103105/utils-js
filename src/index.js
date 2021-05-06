@@ -1,8 +1,20 @@
-export { default as formatMoney} from './formatMoney';
-export { default as isAvailableTele} from './isAvailableTele';
-export { default as isWxWebView} from './isWxWebView';
-export { default as mathAdd} from './mathAdd';
-export { default as mathDiv} from './mathDiv';
-export { default as mathMul} from './mathMul';
-export { default as mathSub} from './mathSub';
-export { default as randomInt} from './randomInt';
+// 日期
+export { default as getNextMonday } from './date/getNextMonday';
+export { default as isToday } from './date/isToday';
+
+// 环境
+export { default as isQQ} from './environment/inInQQ';
+export { default as isIOS} from './environment/isIOS';
+export { default as isWxWebView} from './environment/isWxWebView';
+
+// 数字
+export { default as formatMoney} from './number/formatMoney';
+export { default as isAvailableTele} from './number/isAvailableTele';
+export { default as mathAdd} from './number/mathAdd';
+export { default as mathDiv} from './number/mathDiv';
+export { default as mathMul} from './number/mathMul';
+export { default as mathSub} from './number/mathSub';
+export { default as randomInt} from './number/randomInt';
+
+// 字符串处理
+export { default as specialStrFilter } from './string/specialStrFilter';
