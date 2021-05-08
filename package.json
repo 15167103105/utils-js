@@ -1,13 +1,13 @@
 {
   "name": "utils-js-htt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "js常用工具函数",
   "main": "./dist/main.js",
   "module": "./dist/main.js",
+  "keywords": ["js", "工具"],
+  "repository": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "prepublish": "webpack"
+    "build": "webpack"
   },
   "author": "htt",
   "license": "ISC",
