@@ -7,6 +7,7 @@
 支持 es6 模块导入，commonJs 导入
 
 两数相加：
+
 `import { mathAdd } from 'utils-js-htt';`
 
 # 支持方法
