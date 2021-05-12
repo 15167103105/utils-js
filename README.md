@@ -18,6 +18,8 @@ getNextMonday: 获取下周一日期
 
 isToday：判断给定日期是否是今天
 
+getQuarterTime：取距离当前最近的整刻时间
+
 ## 环境
 
 isQQ：判断是否 qq 环境
@@ -41,6 +43,8 @@ mathMul：两数相乘
 mathDiv：两数相除
 
 randomInt：给定两数范围之间的随机整数
+
+formatPhoneType：格式化手机号
 
 ## 字符串
 
