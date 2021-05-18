@@ -49,3 +49,13 @@ formatPhoneType：格式化手机号
 ## 字符串
 
 specialStrFilter：过滤特殊字符
+
+filterBlocks：过滤空格
+
+## 图片
+
+tbThumbnail：淘宝图片缩略图显示
+
+## 地区
+
+getDistrict：获取省市区数组

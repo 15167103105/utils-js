@@ -20,3 +20,10 @@ export { default as formatPhoneType } from './number/formatPhoneType';
 
 // 字符串处理
 export { default as specialStrFilter } from './string/specialStrFilter';
+export { default as filterBlocks } from './string/filterBlocks';
+
+// 图片处理
+export { default as tbThumbnail } from './picture/tbThumbnail';
+
+// 获取省市区
+export { default as getDistrict } from './district/getDistrict';
